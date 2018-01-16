@@ -82,7 +82,7 @@ ccminer_CPPFLAGS = @LIBCURL_CPPFLAGS@ @OPENMP_CFLAGS@ $(CPPFLAGS) $(PTHREAD_FLAG
 
 #nvcc_ARCH  = -gencode=arch=compute_50,code=\"sm_50,compute_50\"
 
-nvcc_ARCH = --compiler-bindir /usr/bin/gcc-4.9 -gencode=arch=compute_52,code=\"sm_52,compute_52\"
+nvcc_ARCH = -gencode=arch=compute_52,code=\"sm_52,compute_52\"
 #nvcc_ARCH += -gencode=arch=compute_35,code=\"sm_35,compute_35\"
 #nvcc_ARCH += -gencode=arch=compute_30,code=\"sm_30,compute_30\"
 #nvcc_ARCH += -gencode=arch=compute_20,code=\"sm_21,compute_20\"
